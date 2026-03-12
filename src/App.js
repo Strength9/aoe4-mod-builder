@@ -343,7 +343,7 @@ export default function App(){
     return items;
   },[unitMods,unitTrain,bldgMods,civMods,ageMods,techMods,lmMods,res,globals,flags,getCM,isCivMod]);
 
-  const P=(props)=><Panel {...props} collapsed={collapsed} toggleP={toggleP}/>;
+  const P=useMemo(()=>{const Comp=(props)=><Panel {...props} collapsed={collapsed} toggleP={toggleP}/>;return Comp;},[collapsed,toggleP]);
   const slugName=(meta.name||"my-mod").replace(/[^a-zA-Z0-9\-_]/g,"-").toLowerCase();
   const filteredUnits=UNITS.filter(u=>(unitFilter==="all"||u.cat===unitFilter)&&u.name.toLowerCase().includes(unitSearch.toLowerCase()));
   const filteredBldgs=BUILDINGS.filter(b=>bldgFilter==="all"||b.cat===bldgFilter);

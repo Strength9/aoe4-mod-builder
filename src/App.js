@@ -390,7 +390,7 @@ export default function App(){
           <div style={mk.emblem}>⚔️</div>
           <div style={{flexShrink:0}}>
             <div style={{fontFamily:"Georgia,serif",fontSize:13,fontWeight:"bold",color:C.gold2,letterSpacing:2,textTransform:"uppercase"}}>Forge of Empires</div>
-            <div style={{fontSize:11,color:C.text3,letterSpacing:2}}>AoE IV MOD BUILDER v4</div>
+            <div style={{fontSize:11,color:C.text3,letterSpacing:2}}>AoE IV MOD BUILDER v9.1</div>
           </div>
           <div style={{width:1,height:24,background:C.border,margin:"0 4px"}}/>
           <div style={mk.tabBar}>{TABS.map(([id,lbl])=><div key={id} style={mk.tab(tab===id)} onClick={()=>setTab(id)}>{lbl}</div>)}</div>
@@ -464,7 +464,7 @@ export default function App(){
                 <StatSlider key={d.k} label={d.l+" Multiplier"} value={globals[d.k]} baseDisplay={1} min={0.1} max={5} step={0.05} fmt={v=>`${v.toFixed(2)}×`} mode="mult" onChange={v=>setGlobals(p=>({...p,[d.k]:v}))}/>
               ))}
               <hr style={mk.div}/>
-              <div><label style={mk.lbl}>Population Cap <span style={{color:C.gold}}>(default 200, range 50–1000)</span></label>
+              <div><label style={mk.lbl}>Population Cap <span style={{color:C.gold}}>(default 200, range 1–1000)</span></label>
                 <input type="number" style={mk.inp} value={globals.popCap} min={1} max={1000} onChange={e=>setGlobals(p=>({...p,popCap:e.target.value===""?"":parseInt(e.target.value)}))} onBlur={()=>setGlobals(p=>({...p,popCap:Math.max(1,Math.min(1000,parseInt(p.popCap)||200))}))}/>
               </div>
             </P>

@@ -1,6 +1,6 @@
 {
   "name": "aoe4-mod-builder",
-  "version": "4.0.0",
+  "version": "9.1.0",
   "private": true,
   "homepage": "https://strength9.github.io/aoe4-mod-builder",
   "dependencies": {

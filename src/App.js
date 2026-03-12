@@ -465,7 +465,7 @@ export default function App(){
               ))}
               <hr style={mk.div}/>
               <div><label style={mk.lbl}>Population Cap <span style={{color:C.gold}}>(default 200, range 50–1000)</span></label>
-                <input type="number" style={mk.inp} value={globals.popCap} min={50} max={1000} onChange={e=>setGlobals(p=>({...p,popCap:e.target.value===""?"":parseInt(e.target.value)}))} onBlur={()=>setGlobals(p=>({...p,popCap:Math.max(50,Math.min(1000,parseInt(p.popCap)||200))}))}/>
+                <input type="number" style={mk.inp} value={globals.popCap} min={1} max={1000} onChange={e=>setGlobals(p=>({...p,popCap:e.target.value===""?"":parseInt(e.target.value)}))} onBlur={()=>setGlobals(p=>({...p,popCap:Math.max(1,Math.min(1000,parseInt(p.popCap)||200))}))}/>
               </div>
             </P>
           </div>

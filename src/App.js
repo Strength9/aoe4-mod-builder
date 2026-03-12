@@ -119,7 +119,7 @@ const mk={
   hdrIn:{maxWidth:1300,margin:"0 auto",display:"flex",alignItems:"center",height:56,gap:10},
   emblem:{width:36,height:36,border:`2px solid ${C.gold}`,borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,background:`radial-gradient(circle,${C.bg4},${C.bg})`,flexShrink:0},
   tabBar:{display:"flex",gap:1,flex:1,overflowX:"auto"},
-  tab:(a)=>({padding:"6px 11px",borderRadius:3,cursor:"pointer",fontSize:14,letterSpacing:1,color:a?C.gold2:C.text3,background:a?`rgba(200,168,75,0.12)`:"transparent",border:a?`1px solid ${C.border2}`:"1px solid transparent",whiteSpace:"nowrap",fontFamily:"Georgia,serif",userSelect:"none"}),
+  tab:(a)=>({padding:"6px 11px",borderRadius:3,cursor:"pointer",fontSize:14,letterSpacing:1,color:a?C.gold2:C.text3,background:a?`rgba(200,168,75,0.12)`:"transparent",border:a?`1px solid ${C.border2}`:"1px solid transparent",whiteSpace:"nowrap",fontFamily:"Georgia,serif",userSelect:"none",textDecoration:"none"}),
   body:{flex:1,maxWidth:1300,margin:"0 auto",padding:"16px 14px",width:"100%"},
   panel:{background:`linear-gradient(135deg,${C.bg3},${C.bg2})`,border:`1px solid ${C.border}`,borderRadius:6,marginBottom:12,overflow:"hidden"},
   pH:{padding:"9px 14px",background:"rgba(0,0,0,0.4)",borderBottom:`1px solid ${C.border}`,display:"flex",alignItems:"center",gap:8,fontSize:13,color:C.gold,letterSpacing:1,textTransform:"uppercase",fontFamily:"Georgia,serif",cursor:"pointer",userSelect:"none"},

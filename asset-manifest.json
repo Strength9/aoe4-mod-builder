@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/aoe4-mod-builder/static/js/main.be8705ef.js",
+    "main.js": "/aoe4-mod-builder/static/js/main.e15bb181.js",
     "index.html": "/aoe4-mod-builder/index.html",
-    "main.be8705ef.js.map": "/aoe4-mod-builder/static/js/main.be8705ef.js.map"
+    "main.e15bb181.js.map": "/aoe4-mod-builder/static/js/main.e15bb181.js.map"
   },
   "entrypoints": [
-    "static/js/main.be8705ef.js"
+    "static/js/main.e15bb181.js"
   ]
 }

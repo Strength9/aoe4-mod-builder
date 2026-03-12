@@ -114,40 +114,40 @@ const TABS=[["meta","📋 Info"],["presets","⚡ Presets"],["globals","🌐 Glob
 
 const C={bg:"#0d0b08",bg2:"#141108",bg3:"#1c1710",bg4:"#252019",border:"#3a2e1a",border2:"#5a4820",gold:"#c8a84b",gold2:"#e8c96a",goldDim:"#7a6430",red:"#c84030",green:"#40a060",text:"#e8d9b0",text2:"#b8a878",text3:"#7a6840",blue:"#3080c8"};
 const mk={
-  app:{background:C.bg,minHeight:"100vh",fontFamily:"Georgia,serif",color:C.text,display:"flex",flexDirection:"column",fontSize:14},
+  app:{background:C.bg,minHeight:"100vh",fontFamily:"Georgia,serif",color:C.text,display:"flex",flexDirection:"column",fontSize:16},
   hdr:{background:`linear-gradient(180deg,#000,${C.bg2})`,borderBottom:`2px solid ${C.border2}`,padding:"0 14px",position:"sticky",top:0,zIndex:100,boxShadow:"0 4px 30px rgba(0,0,0,0.9)"},
   hdrIn:{maxWidth:1300,margin:"0 auto",display:"flex",alignItems:"center",height:56,gap:10},
   emblem:{width:36,height:36,border:`2px solid ${C.gold}`,borderRadius:"50%",display:"flex",alignItems:"center",justifyContent:"center",fontSize:16,background:`radial-gradient(circle,${C.bg4},${C.bg})`,flexShrink:0},
   tabBar:{display:"flex",gap:1,flex:1,overflowX:"auto"},
-  tab:(a)=>({padding:"5px 9px",borderRadius:3,cursor:"pointer",fontSize:10,letterSpacing:1,color:a?C.gold2:C.text3,background:a?`rgba(200,168,75,0.12)`:"transparent",border:a?`1px solid ${C.border2}`:"1px solid transparent",whiteSpace:"nowrap",fontFamily:"Georgia,serif",userSelect:"none"}),
+  tab:(a)=>({padding:"6px 11px",borderRadius:3,cursor:"pointer",fontSize:14,letterSpacing:1,color:a?C.gold2:C.text3,background:a?`rgba(200,168,75,0.12)`:"transparent",border:a?`1px solid ${C.border2}`:"1px solid transparent",whiteSpace:"nowrap",fontFamily:"Georgia,serif",userSelect:"none"}),
   body:{flex:1,maxWidth:1300,margin:"0 auto",padding:"16px 14px",width:"100%"},
   panel:{background:`linear-gradient(135deg,${C.bg3},${C.bg2})`,border:`1px solid ${C.border}`,borderRadius:6,marginBottom:12,overflow:"hidden"},
-  pH:{padding:"8px 13px",background:"rgba(0,0,0,0.4)",borderBottom:`1px solid ${C.border}`,display:"flex",alignItems:"center",gap:7,fontSize:10,color:C.gold,letterSpacing:1,textTransform:"uppercase",fontFamily:"Georgia,serif",cursor:"pointer",userSelect:"none"},
+  pH:{padding:"9px 14px",background:"rgba(0,0,0,0.4)",borderBottom:`1px solid ${C.border}`,display:"flex",alignItems:"center",gap:8,fontSize:13,color:C.gold,letterSpacing:1,textTransform:"uppercase",fontFamily:"Georgia,serif",cursor:"pointer",userSelect:"none"},
   pB:{padding:13},
   g2:{display:"grid",gridTemplateColumns:"1fr 1fr",gap:11},
   g3:{display:"grid",gridTemplateColumns:"1fr 1fr 1fr",gap:9},
   g4:{display:"grid",gridTemplateColumns:"repeat(4,1fr)",gap:7},
-  lbl:{display:"block",fontSize:9,letterSpacing:1.5,color:C.text3,textTransform:"uppercase",marginBottom:3,fontFamily:"Georgia,serif"},
-  inp:{width:"100%",background:"rgba(0,0,0,0.6)",border:`1px solid ${C.border}`,borderRadius:4,color:C.text,padding:"6px 10px",fontSize:13,fontFamily:"Georgia,serif",outline:"none",boxSizing:"border-box"},
-  inpSm:{background:"rgba(0,0,0,0.6)",border:`1px solid ${C.border}`,borderRadius:3,color:C.text,padding:"4px 7px",fontSize:12,fontFamily:"Georgia,serif",outline:"none",width:"100%",boxSizing:"border-box"},
-  ta:{width:"100%",background:"rgba(0,0,0,0.6)",border:`1px solid ${C.border}`,borderRadius:4,color:C.text,padding:"6px 10px",fontSize:13,fontFamily:"Georgia,serif",outline:"none",resize:"vertical",minHeight:60,boxSizing:"border-box"},
+  lbl:{display:"block",fontSize:11,letterSpacing:1.5,color:C.text3,textTransform:"uppercase",marginBottom:4,fontFamily:"Georgia,serif"},
+  inp:{width:"100%",background:"rgba(0,0,0,0.6)",border:`1px solid ${C.border}`,borderRadius:4,color:C.text,padding:"8px 12px",fontSize:15,fontFamily:"Georgia,serif",outline:"none",boxSizing:"border-box"},
+  inpSm:{background:"rgba(0,0,0,0.6)",border:`1px solid ${C.border}`,borderRadius:3,color:C.text,padding:"5px 9px",fontSize:14,fontFamily:"Georgia,serif",outline:"none",width:"100%",boxSizing:"border-box"},
+  ta:{width:"100%",background:"rgba(0,0,0,0.6)",border:`1px solid ${C.border}`,borderRadius:4,color:C.text,padding:"8px 12px",fontSize:15,fontFamily:"Georgia,serif",outline:"none",resize:"vertical",minHeight:60,boxSizing:"border-box"},
   sc:{padding:8,background:"rgba(0,0,0,0.4)",border:`1px solid ${C.border}`,borderRadius:5,display:"flex",flexDirection:"column",gap:5},
   cbox:{background:"rgba(0,0,0,0.4)",border:`1px solid ${C.border}`,borderRadius:5,padding:9,textAlign:"center"},
   div:{border:"none",borderTop:`1px solid ${C.border}`,margin:"10px 0"},
-  help:{background:"rgba(200,168,75,0.04)",border:`1px solid rgba(200,168,75,0.12)`,borderRadius:5,padding:"9px 12px",marginBottom:12,fontSize:12,color:C.text3,fontStyle:"italic",lineHeight:1.6},
-  stitle:{fontFamily:"Georgia,serif",fontSize:17,color:C.gold2,letterSpacing:2,marginBottom:2},
-  ssub:{fontSize:11,color:C.text3,marginBottom:14},
+  help:{background:"rgba(200,168,75,0.04)",border:`1px solid rgba(200,168,75,0.12)`,borderRadius:5,padding:"10px 14px",marginBottom:12,fontSize:14,color:C.text3,fontStyle:"italic",lineHeight:1.6},
+  stitle:{fontFamily:"Georgia,serif",fontSize:20,color:C.gold2,letterSpacing:2,marginBottom:3},
+  ssub:{fontSize:14,color:C.text3,marginBottom:14},
 };
 
 const Btn=({variant="primary",children,onClick,style={}})=>{
-  const base={padding:"5px 13px",borderRadius:3,cursor:"pointer",fontFamily:"Georgia,serif",fontSize:10,letterSpacing:1,textTransform:"uppercase",border:"1px solid transparent",display:"inline-flex",alignItems:"center",gap:5,background:"none"};
-  const vars={primary:{background:`linear-gradient(135deg,${C.goldDim},${C.gold})`,color:C.bg,fontWeight:"bold"},secondary:{background:"transparent",color:C.text2,border:`1px solid ${C.border2}`},danger:{background:"transparent",color:C.red,border:`1px solid rgba(200,64,48,0.4)`},export:{background:`linear-gradient(135deg,#1a5a30,${C.green})`,color:"#a0f0b0",fontWeight:"bold",fontSize:12,padding:"8px 18px"},ghost:{background:"rgba(200,168,75,0.07)",color:C.gold,border:`1px solid ${C.border}`}};
+  const base={padding:"6px 14px",borderRadius:3,cursor:"pointer",fontFamily:"Georgia,serif",fontSize:14,letterSpacing:1,textTransform:"uppercase",border:"1px solid transparent",display:"inline-flex",alignItems:"center",gap:5,background:"none"};
+  const vars={primary:{background:`linear-gradient(135deg,${C.goldDim},${C.gold})`,color:C.bg,fontWeight:"bold"},secondary:{background:"transparent",color:C.text2,border:`1px solid ${C.border2}`},danger:{background:"transparent",color:C.red,border:`1px solid rgba(200,64,48,0.4)`},export:{background:`linear-gradient(135deg,#1a5a30,${C.green})`,color:"#a0f0b0",fontWeight:"bold",fontSize:14,padding:"9px 20px"},ghost:{background:"rgba(200,168,75,0.07)",color:C.gold,border:`1px solid ${C.border}`}};
   return <button onClick={onClick} style={{...base,...(vars[variant]||vars.primary),...style}}>{children}</button>;
 };
 const Badge=({color="gold",children,style={}})=>{
   const cols={gold:{bg:"rgba(200,168,75,0.15)",c:C.gold,b:"rgba(200,168,75,0.3)"},green:{bg:"rgba(64,160,96,0.15)",c:C.green,b:"rgba(64,160,96,0.3)"},red:{bg:"rgba(200,64,48,0.15)",c:C.red,b:"rgba(200,64,48,0.3)"},blue:{bg:"rgba(48,128,200,0.15)",c:C.blue,b:"rgba(48,128,200,0.3)"}};
   const t=cols[color]||cols.gold;
-  return <span style={{display:"inline-flex",alignItems:"center",padding:"1px 7px",borderRadius:10,fontSize:9,fontFamily:"Georgia,serif",background:t.bg,color:t.c,border:`1px solid ${t.b}`,...style}}>{children}</span>;
+  return <span style={{display:"inline-flex",alignItems:"center",padding:"2px 8px",borderRadius:10,fontSize:11,fontFamily:"Georgia,serif",background:t.bg,color:t.c,border:`1px solid ${t.b}`,...style}}>{children}</span>;
 };
 const Panel=({id,icon,title,badge,children,defaultOpen=true,collapsed,toggleP})=>{
   const open=collapsed[id]===undefined?defaultOpen:!collapsed[id];
@@ -155,8 +155,8 @@ const Panel=({id,icon,title,badge,children,defaultOpen=true,collapsed,toggleP})=
     <div style={mk.panel}>
       <div style={mk.pH} onClick={()=>toggleP(id)}>
         <span>{icon}</span>{title}
-        {badge&&<Badge color="green" style={{marginLeft:6,fontSize:8}}>{badge}</Badge>}
-        <span style={{marginLeft:"auto",color:C.text3,fontSize:9,transform:open?"none":"rotate(-90deg)",transition:"transform 0.2s"}}>▼</span>
+        {badge&&<Badge color="green" style={{marginLeft:6,fontSize:13}}>{badge}</Badge>}
+        <span style={{marginLeft:"auto",color:C.text3,fontSize:11,transform:open?"none":"rotate(-90deg)",transition:"transform 0.2s"}}>▼</span>
       </div>
       {open&&<div style={mk.pB}>{children}</div>}
     </div>
@@ -177,20 +177,20 @@ const StatSlider=({label,value,baseDisplay,min,max,step,fmt,onChange,disabled=fa
   return(
     <div style={{...mk.sc,opacity:disabled?0.4:1}}>
       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-        <span style={{fontSize:10,color:C.text2}}>{label}</span>
-        <div style={{display:"flex",gap:4,alignItems:"center"}}>
-          <span style={{fontSize:9,color:C.text3}}>base:{disabled?"—":baseDisplay}</span>
-          <span style={{display:"inline-flex",alignItems:"center",padding:"1px 7px",borderRadius:10,fontSize:9,fontFamily:"Georgia,serif",background:`rgba(${isBuffed?"64,160,96":isNerfed?"200,64,48":"200,168,75"},0.15)`,color:col,border:`1px solid ${col}44`,minWidth:36,justifyContent:"center"}}>{fmt(value)}</span>
+        <span style={{fontSize:13,color:C.text2}}>{label}</span>
+        <div style={{display:"flex",gap:5,alignItems:"center"}}>
+          <span style={{fontSize:11,color:C.text3}}>base:{disabled?"—":baseDisplay}</span>
+          <span style={{display:"inline-flex",alignItems:"center",padding:"2px 8px",borderRadius:10,fontSize:11,fontFamily:"Georgia,serif",background:`rgba(${isBuffed?"64,160,96":isNerfed?"200,64,48":"200,168,75"},0.15)`,color:col,border:`1px solid ${col}44`,minWidth:40,justifyContent:"center"}}>{fmt(value)}</span>
         </div>
       </div>
       <input type="range" min={min} max={max} step={step} value={value} disabled={disabled} onChange={e=>onChange(parseFloat(e.target.value))} style={{width:"100%",accentColor:C.gold,cursor:disabled?"not-allowed":"pointer"}}/>
-      <div style={{textAlign:"right",fontSize:9,height:11,color:isBase?C.text3:col}}>{pctStr}</div>
+      <div style={{textAlign:"right",fontSize:11,height:14,color:isBase?C.text3:col}}>{pctStr}</div>
     </div>
   );
 };
 const Toggle=({on,onChange,label,desc,last=false})=>(
   <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",padding:"8px 0",borderBottom:last?"none":`1px solid rgba(58,46,26,0.35)`}}>
-    <div><div style={{fontSize:13,color:C.text}}>{label}</div>{desc&&<div style={{fontSize:10,color:C.text3,fontStyle:"italic"}}>{desc}</div>}</div>
+    <div><div style={{fontSize:15,color:C.text}}>{label}</div>{desc&&<div style={{fontSize:13,color:C.text3,fontStyle:"italic"}}>{desc}</div>}</div>
     <div onClick={()=>onChange(!on)} style={{width:36,height:20,background:on?`rgba(200,168,75,0.28)`:"rgba(0,0,0,0.5)",border:`1px solid ${on?C.gold:C.border}`,borderRadius:10,position:"relative",cursor:"pointer",transition:"all 0.2s",flexShrink:0,marginLeft:12}}>
       <div style={{position:"absolute",top:2,left:on?18:2,width:14,height:14,background:on?C.gold2:C.text3,borderRadius:"50%",transition:"all 0.2s",boxShadow:on?"0 0 6px rgba(200,168,75,0.5)":"none"}}/>
     </div>
@@ -200,7 +200,7 @@ const NumInput=({value,onChange,min=0,max=99999,icon,label})=>(
   <div style={mk.cbox}>
     {icon&&<div style={{fontSize:17,marginBottom:3}}>{icon}</div>}
     {label&&<div style={{...mk.lbl,textAlign:"center",marginBottom:4}}>{label}</div>}
-    <input type="number" style={{...mk.inpSm,textAlign:"center"}} value={value} min={min} max={max} onChange={e=>onChange(Math.max(min,Math.min(max,parseInt(e.target.value)||0)))}/>
+    <input type="number" style={{...mk.inpSm,textAlign:"center"}} value={value} min={min} max={max} onChange={e=>onChange(e.target.value===""?"":parseInt(e.target.value))} onBlur={()=>{if(value===""||isNaN(value))onChange(min);else onChange(Math.max(min,Math.min(max,value)));}}/>
   </div>
 );
 
@@ -367,10 +367,10 @@ export default function App(){
           <Badge color="blue">Base HP: {u.hp}</Badge>
           <Badge color="blue">Base ATK: {u.atk}</Badge>
         </div>
-        <div style={{fontSize:10,color:C.text3,marginBottom:6,fontStyle:"italic"}}>⚔️ Combat Statistics</div>
+        <div style={{fontSize:13,color:C.text3,marginBottom:6,fontStyle:"italic"}}>⚔️ Combat Statistics</div>
         <div style={mk.g2}>{statDefs.map(d=><StatSlider key={d.key} label={d.label} value={m[d.key]} baseDisplay={d.baseDisplay} min={d.min} max={d.max} step={d.step} fmt={d.fmt} disabled={d.dis} mode="mult" onChange={v=>setUS(u.id,d.key,v)}/>)}</div>
         <hr style={mk.div}/>
-        <div style={{fontSize:10,color:C.text3,marginBottom:6,fontStyle:"italic"}}>🛠️ Training Cost & Time</div>
+        <div style={{fontSize:13,color:C.text3,marginBottom:6,fontStyle:"italic"}}>🛠️ Training Cost & Time</div>
         <div style={mk.g3}>
           <NumInput icon="🌾" label="Food Cost"     value={tm.trainCostF} onChange={v=>setUTS(u.id,"trainCostF",v)}/>
           <NumInput icon="💎" label="Gold Cost"     value={tm.trainCostG} onChange={v=>setUTS(u.id,"trainCostG",v)}/>
@@ -390,13 +390,13 @@ export default function App(){
           <div style={mk.emblem}>⚔️</div>
           <div style={{flexShrink:0}}>
             <div style={{fontFamily:"Georgia,serif",fontSize:13,fontWeight:"bold",color:C.gold2,letterSpacing:2,textTransform:"uppercase"}}>Forge of Empires</div>
-            <div style={{fontSize:9,color:C.text3,letterSpacing:2}}>AoE IV MOD BUILDER v4</div>
+            <div style={{fontSize:11,color:C.text3,letterSpacing:2}}>AoE IV MOD BUILDER v4</div>
           </div>
           <div style={{width:1,height:24,background:C.border,margin:"0 4px"}}/>
           <div style={mk.tabBar}>{TABS.map(([id,lbl])=><div key={id} style={mk.tab(tab===id)} onClick={()=>setTab(id)}>{lbl}</div>)}</div>
           <div style={{display:"flex",gap:7,alignItems:"center",marginLeft:"auto",flexShrink:0}}>
             <Badge color={totalChanges>0?"green":"gold"}>{totalChanges} changes</Badge>
-            <Btn variant="secondary" style={{fontSize:9,padding:"4px 10px"}} onClick={resetAll}>↩ Reset All</Btn>
+            <Btn variant="secondary" style={{fontSize:11,padding:"4px 10px"}} onClick={resetAll}>↩ Reset All</Btn>
             <Btn variant="export" onClick={exportMod} style={{opacity:exporting?0.6:1}}>{exporting?"⏳ Exporting...":"⬇ Export ZIP"}</Btn>
           </div>
         </div>
@@ -422,7 +422,7 @@ export default function App(){
               </P>
               <P id="p-stats" icon="📊" title="Mod Stats">
                 {[["Total changes",totalChanges],["Units modified",`${Object.keys(unitMods).length} / ${UNITS.length}`],["Buildings modified",`${Object.keys(bldgMods).length} / ${BUILDINGS.length}`],["Civs modified",`${Object.keys(civMods).length} / ${CIVS.length}`],["Techs modified",`${Object.keys(techMods).length} / ${TECHS.length}`],["Landmarks modified",`${Object.keys(lmMods).length} / ${LANDMARKS.length}`],["Flags active",Object.values(flags).filter(Boolean).length]].map(([k,v])=>(
-                  <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:`1px solid rgba(58,46,26,0.3)`,fontSize:12}}>
+                  <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:`1px solid rgba(58,46,26,0.3)`,fontSize:14}}>
                     <span style={{color:C.text3}}>{k}</span><span style={{color:C.gold2,fontWeight:"bold"}}>{v}</span>
                   </div>
                 ))}
@@ -441,7 +441,7 @@ export default function App(){
                   <div style={{fontSize:32,marginBottom:7}}>{p.icon}</div>
                   <div style={{fontFamily:"Georgia,serif",fontSize:13,color:C.gold2,marginBottom:4}}>{p.name}</div>
                   <div style={{fontSize:11,color:C.text3,fontStyle:"italic",marginBottom:11}}>{p.desc}</div>
-                  <Btn variant="ghost" style={{fontSize:9,padding:"3px 11px"}}>Apply</Btn>
+                  <Btn variant="ghost" style={{fontSize:11,padding:"3px 11px"}}>Apply</Btn>
                 </div>
               </div>
             ))}
@@ -465,7 +465,7 @@ export default function App(){
               ))}
               <hr style={mk.div}/>
               <div><label style={mk.lbl}>Population Cap <span style={{color:C.gold}}>(default 200, range 50–1000)</span></label>
-                <input type="number" style={mk.inp} value={globals.popCap} min={50} max={1000} onChange={e=>setGlobals(p=>({...p,popCap:Math.max(50,Math.min(1000,parseInt(e.target.value)||200))}))}/>
+                <input type="number" style={mk.inp} value={globals.popCap} min={50} max={1000} onChange={e=>setGlobals(p=>({...p,popCap:e.target.value===""?"":parseInt(e.target.value)}))} onBlur={()=>setGlobals(p=>({...p,popCap:Math.max(50,Math.min(1000,parseInt(p.popCap)||200))}))}/>
               </div>
             </P>
           </div>
@@ -478,7 +478,7 @@ export default function App(){
             <div>
               <div style={{display:"flex",gap:5,marginBottom:8,flexWrap:"wrap"}}>
                 {[["all","All"],["infantry","⚔️ Infantry"],["cavalry","🐴 Cavalry"],["ranged","🏹 Ranged"],["siege","💣 Siege"],["naval","⚓ Naval"]].map(([f,l])=>(
-                  <Btn key={f} variant={unitFilter===f?"primary":"secondary"} style={{fontSize:9,padding:"3px 8px"}} onClick={()=>setUnitFilter(f)}>{l}</Btn>
+                  <Btn key={f} variant={unitFilter===f?"primary":"secondary"} style={{fontSize:11,padding:"3px 8px"}} onClick={()=>setUnitFilter(f)}>{l}</Btn>
                 ))}
               </div>
               <input style={{...mk.inp,marginBottom:8}} placeholder="🔍 Search units..." value={unitSearch} onChange={e=>setUnitSearch(e.target.value)}/>
@@ -490,7 +490,7 @@ export default function App(){
                       {mod&&<div style={{position:"absolute",top:3,left:4,width:5,height:5,background:C.green,borderRadius:"50%"}}/>}
                       {sel&&<div style={{position:"absolute",top:3,right:5,color:C.gold,fontSize:8}}>✓</div>}
                       <div style={{fontSize:19,marginBottom:2}}>{u.icon}</div>
-                      <div style={{fontSize:9,fontFamily:"Georgia,serif",color:sel?C.gold2:C.text2,lineHeight:1.2}}>{u.name}</div>
+                      <div style={{fontSize:11,fontFamily:"Georgia,serif",color:sel?C.gold2:C.text2,lineHeight:1.2}}>{u.name}</div>
                     </div>
                   );
                 })}
@@ -505,7 +505,7 @@ export default function App(){
           <div style={mk.ssub}>Construction costs, build time, HP, and garrison for all {BUILDINGS.length} buildings</div>
           <div style={{display:"flex",gap:5,marginBottom:10,flexWrap:"wrap"}}>
             {[["all","All"],["core","🏘️ Core"],["military","⚔️ Military"],["economy","💰 Economy"],["defensive","🛡️ Defensive"],["naval","⚓ Naval"],["research","🔬 Research"],["wonder","✨ Wonder"]].map(([f,l])=>(
-              <Btn key={f} variant={bldgFilter===f?"primary":"secondary"} style={{fontSize:9,padding:"3px 8px"}} onClick={()=>setBldgFilter(f)}>{l}</Btn>
+              <Btn key={f} variant={bldgFilter===f?"primary":"secondary"} style={{fontSize:11,padding:"3px 8px"}} onClick={()=>setBldgFilter(f)}>{l}</Btn>
             ))}
           </div>
           {filteredBldgs.map(b=>{
@@ -528,7 +528,7 @@ export default function App(){
                     {b.garrison>0&&<StatSlider label="Garrison" value={m.garrison} baseDisplay={b.garrison} min={0} max={Math.max(b.garrison*4,40)} step={1} fmt={v=>v} mode="raw" onChange={v=>setBS(b.id,"garrison",v)}/>}
                   </div>
                 </div>
-                {mod&&<Btn variant="danger" style={{fontSize:9,padding:"3px 9px",marginTop:9}} onClick={()=>setBldgMods(p=>{const n={...p};delete n[b.id];return n;})}>↩ Reset</Btn>}
+                {mod&&<Btn variant="danger" style={{fontSize:11,padding:"3px 9px",marginTop:9}} onClick={()=>setBldgMods(p=>{const n={...p};delete n[b.id];return n;})}>↩ Reset</Btn>}
               </P>
             );
           })}
@@ -541,7 +541,7 @@ export default function App(){
             {CIVS.map(c=>(
               <div key={c.id} style={{padding:"9px 7px",background:selCiv===c.id?"rgba(200,168,75,0.1)":"rgba(0,0,0,0.4)",border:`1px solid ${selCiv===c.id?C.gold:isCivMod(c.id)?C.green:C.border}`,borderRadius:5,cursor:"pointer",textAlign:"center",transition:"all 0.15s"}} onClick={()=>setSelCiv(c.id)}>
                 <div style={{fontSize:22,marginBottom:4}}>{c.flag}</div>
-                <div style={{fontSize:9,fontFamily:"Georgia,serif",color:selCiv===c.id?C.gold2:C.text2,lineHeight:1.2}}>{c.name}</div>
+                <div style={{fontSize:11,fontFamily:"Georgia,serif",color:selCiv===c.id?C.gold2:C.text2,lineHeight:1.2}}>{c.name}</div>
                 {isCivMod(c.id)&&<Badge color="green" style={{margin:"3px auto 0",fontSize:7}}>mod</Badge>}
               </div>
             ))}
@@ -557,17 +557,17 @@ export default function App(){
                   <div style={mk.g2}>
                     <div style={mk.sc}>
                       <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-                        <span style={{fontSize:10,color:C.text2}}>{c.bonusName}</span>
+                        <span style={{fontSize:13,color:C.text2}}>{c.bonusName}</span>
                         <div style={{display:"flex",gap:4,alignItems:"center"}}>
-                          <span style={{fontSize:9,color:C.text3}}>base: {c.base}{unit}</span>
-                          <span style={{display:"inline-flex",alignItems:"center",padding:"1px 7px",borderRadius:10,fontSize:9,background:bonusChanged?`rgba(${m.bonus>c.base?"64,160,96":"200,64,48"},0.15)`:"rgba(200,168,75,0.15)",color:bonusChanged?(m.bonus>c.base?C.green:C.red):C.gold,border:"1px solid #44444444",minWidth:36,justifyContent:"center"}}>{m.bonus}{unit}</span>
+                          <span style={{fontSize:11,color:C.text3}}>base: {c.base}{unit}</span>
+                          <span style={{display:"inline-flex",alignItems:"center",padding:"1px 7px",borderRadius:10,fontSize:11,background:bonusChanged?`rgba(${m.bonus>c.base?"64,160,96":"200,64,48"},0.15)`:"rgba(200,168,75,0.15)",color:bonusChanged?(m.bonus>c.base?C.green:C.red):C.gold,border:"1px solid #44444444",minWidth:36,justifyContent:"center"}}>{m.bonus}{unit}</span>
                         </div>
                       </div>
                       <input type="range" min={c.minVal} max={c.maxVal} step={1} value={m.bonus} onChange={e=>setCivMods(p=>({...p,[c.id]:{...getCM(c.id),bonus:parseInt(e.target.value)}}))} style={{width:"100%",accentColor:C.gold}}/>
-                      <div style={{textAlign:"right",fontSize:9,height:11,color:bonusChanged?(m.bonus>c.base?C.green:C.red):C.text3}}>
+                      <div style={{textAlign:"right",fontSize:11,height:11,color:bonusChanged?(m.bonus>c.base?C.green:C.red):C.text3}}>
                         {!bonusChanged?"Base":c.base!==0?`${m.bonus>c.base?"▲":"▼"} ${Math.abs(pct)}% from base`:`${m.bonus>0?"▲":"▼"} ${Math.abs(m.bonus)} from zero`}
                       </div>
-                      <div style={{fontSize:10,color:C.text3,fontStyle:"italic",marginTop:2}}>{c.bonusDesc}</div>
+                      <div style={{fontSize:13,color:C.text3,fontStyle:"italic",marginTop:2}}>{c.bonusDesc}</div>
                     </div>
                     <div>
                       <Toggle on={m.disabled} onChange={v=>setCivMods(p=>({...p,[c.id]:{...getCM(c.id),disabled:v}}))} label="Disable This Bonus" desc="Removes the bonus entirely" last/>
@@ -575,7 +575,7 @@ export default function App(){
                         <label style={mk.lbl}>Custom Description (optional)</label>
                         <input style={mk.inp} placeholder="Override tooltip text..." value={m.customDesc||""} onChange={e=>setCivMods(p=>({...p,[c.id]:{...getCM(c.id),customDesc:e.target.value}}))}/>
                       </div>
-                      {isCivMod(c.id)&&<Btn variant="danger" style={{fontSize:9,padding:"3px 9px",marginTop:9}} onClick={()=>setCivMods(p=>{const n={...p};delete n[c.id];return n;})}>↩ Reset Civ</Btn>}
+                      {isCivMod(c.id)&&<Btn variant="danger" style={{fontSize:11,padding:"3px 9px",marginTop:9}} onClick={()=>setCivMods(p=>{const n={...p};delete n[c.id];return n;})}>↩ Reset Civ</Btn>}
                     </div>
                   </div>
                 </P>
@@ -595,7 +595,7 @@ export default function App(){
                     <span style={{fontSize:13,color:C.text2}}>{ic} {lbl}</span>
                     <input type="range" min={0.1} max={5} step={0.05} value={res[k]} onChange={e=>setRes(p=>({...p,[k]:parseFloat(e.target.value)}))} style={{accentColor:C.gold}}/>
                     <Badge color={res[k]>1.01?"green":res[k]<0.99?"red":"gold"} style={{justifyContent:"center"}}>{res[k].toFixed(2)}×</Badge>
-                    <span style={{fontSize:9,color:res[k]>1.01?C.green:res[k]<0.99?C.red:C.text3,textAlign:"right"}}>{res[k]>1.01?`+${Math.round((res[k]-1)*100)}%`:res[k]<0.99?`${Math.round((res[k]-1)*100)}%`:"base"}</span>
+                    <span style={{fontSize:11,color:res[k]>1.01?C.green:res[k]<0.99?C.red:C.text3,textAlign:"right"}}>{res[k]>1.01?`+${Math.round((res[k]-1)*100)}%`:res[k]<0.99?`${Math.round((res[k]-1)*100)}%`:"base"}</span>
                   </div>
                 ))}
               </P>
@@ -605,7 +605,7 @@ export default function App(){
                     <span style={{fontSize:13,color:C.text2}}>{ic} {lbl}</span>
                     <input type="range" min={0.1} max={5} step={0.05} value={res[k]} onChange={e=>setRes(p=>({...p,[k]:parseFloat(e.target.value)}))} style={{accentColor:C.gold}}/>
                     <Badge color={res[k]>1.01?"green":res[k]<0.99?"red":"gold"} style={{justifyContent:"center"}}>{res[k].toFixed(2)}×</Badge>
-                    <span style={{fontSize:9,color:res[k]>1.01?C.green:res[k]<0.99?C.red:C.text3,textAlign:"right"}}>{res[k]>1.01?`+${Math.round((res[k]-1)*100)}%`:res[k]<0.99?`${Math.round((res[k]-1)*100)}%`:"base"}</span>
+                    <span style={{fontSize:11,color:res[k]>1.01?C.green:res[k]<0.99?C.red:C.text3,textAlign:"right"}}>{res[k]>1.01?`+${Math.round((res[k]-1)*100)}%`:res[k]<0.99?`${Math.round((res[k]-1)*100)}%`:"base"}</span>
                   </div>
                 ))}
               </P>
@@ -621,7 +621,7 @@ export default function App(){
               </P>
               <P id="r-t" icon="🏪" title="Trade Income">
                 <div style={{display:"grid",gridTemplateColumns:"140px 1fr 52px",alignItems:"center",gap:7,padding:"6px 0"}}>
-                  <span style={{fontSize:12,color:C.text2}}>Trade Multiplier</span>
+                  <span style={{fontSize:14,color:C.text2}}>Trade Multiplier</span>
                   <input type="range" min={0.1} max={5} step={0.05} value={res.tradeMult} onChange={e=>setRes(p=>({...p,tradeMult:parseFloat(e.target.value)}))} style={{accentColor:C.gold}}/>
                   <Badge color={res.tradeMult>1.01?"green":res.tradeMult<0.99?"red":"gold"} style={{justifyContent:"center"}}>{res.tradeMult.toFixed(2)}×</Badge>
                 </div>
@@ -657,13 +657,13 @@ export default function App(){
                     return(
                       <div key={t.id} style={{...mk.sc,border:`1px solid ${mod?C.green:C.border}`}}>
                         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
-                          <span style={{fontSize:12,color:C.gold2}}>{t.icon} {t.name}</span>
+                          <span style={{fontSize:14,color:C.gold2}}>{t.icon} {t.name}</span>
                           <Badge color="gold" style={{fontSize:8}}>{t.effect}</Badge>
                         </div>
                         <div style={mk.g2}>
                           {[["costF","🌾 Food",t.costF],["costG","💎 Gold",t.costG]].map(([k,lbl,base])=>(
                             <div key={k}><label style={mk.lbl}>{lbl} <span style={{color:m[k]!==base?C.green:C.text3}}>(base:{base})</span></label>
-                              <input type="number" style={mk.inpSm} value={m[k]} min={0} onChange={e=>setTechMods(p=>({...p,[t.id]:{...getTM(t.id),[k]:Math.max(0,parseInt(e.target.value)||0)}}))}/>
+                              <input type="number" style={mk.inpSm} value={m[k]} min={0} onChange={e=>setTechMods(p=>({...p,[t.id]:{...getTM(t.id),[k]:e.target.value===""?"":parseInt(e.target.value)}}))} onBlur={()=>setTechMods(p=>({...p,[t.id]:{...getTM(t.id),[k]:Math.max(0,parseInt(p[t.id]?.[k])||0)}}))}/>
                             </div>
                           ))}
                         </div>
@@ -729,7 +729,7 @@ export default function App(){
             ?<div style={{...mk.panel,padding:36,textAlign:"center"}}><div style={{fontSize:36,marginBottom:10}}>📝</div><div style={{color:C.text3,fontStyle:"italic"}}>No changes yet — go to any tab to start modding!</div></div>
             :<P id="cl" icon="📝" title={`${totalChanges} Active Changes`}>
               {changeLog.map((item,i)=>(
-                <div key={i} style={{display:"flex",alignItems:"center",gap:8,padding:"5px 8px",background:"rgba(0,0,0,0.3)",borderLeft:`3px solid ${item.type==="buff"?C.green:item.type==="nerf"?C.red:C.blue}`,marginBottom:4,borderRadius:"0 4px 4px 0",fontSize:12}}>
+                <div key={i} style={{display:"flex",alignItems:"center",gap:8,padding:"5px 8px",background:"rgba(0,0,0,0.3)",borderLeft:`3px solid ${item.type==="buff"?C.green:item.type==="nerf"?C.red:C.blue}`,marginBottom:4,borderRadius:"0 4px 4px 0",fontSize:14}}>
                   <span>{item.icon}</span>
                   <span style={{color:C.text2,flex:1}}>{item.text}</span>
                   <Badge color={item.type==="buff"?"green":item.type==="nerf"?"red":"blue"} style={{fontSize:8,flexShrink:0}}>{item.type}</Badge>
@@ -743,7 +743,7 @@ export default function App(){
           <div style={mk.stitle}>📖 Installation Guide</div>
           <div style={mk.ssub}>Step-by-step guide to installing your mod in Age of Empires IV</div>
           <P id="ig-1" icon="1️⃣" title="Step 1 — Export Your Mod">
-            <div style={{fontSize:13,color:C.text2,lineHeight:1.8}}>Click <span style={{color:C.gold,fontWeight:"bold"}}>⬇ Export ZIP</span> in the top-right corner. This downloads <code style={{background:"rgba(0,0,0,0.4)",padding:"1px 6px",borderRadius:3,fontSize:12,color:C.gold2}}>{slugName}-v{meta.version}.zip</code></div>
+            <div style={{fontSize:13,color:C.text2,lineHeight:1.8}}>Click <span style={{color:C.gold,fontWeight:"bold"}}>⬇ Export ZIP</span> in the top-right corner. This downloads <code style={{background:"rgba(0,0,0,0.4)",padding:"1px 6px",borderRadius:3,fontSize:14,color:C.gold2}}>{slugName}-v{meta.version}.zip</code></div>
             <div style={{...mk.help,marginTop:10,marginBottom:0}}>Contains <b style={{color:C.gold}}>mod.json</b>, <b style={{color:C.gold}}>modinfo.json</b>, <b style={{color:C.gold}}>README.txt</b>, and an <b style={{color:C.gold}}>attrib/</b> folder with per-category JSON files.</div>
           </P>
           <P id="ig-2" icon="2️⃣" title="Step 2 — Find Your Mods Folder">
@@ -788,8 +788,8 @@ export default function App(){
           <P id="ig-trouble" icon="🔧" title="Troubleshooting">
             {[["Mod doesn't appear in My Mods","Ensure the folder isn't double-nested (local\\mod\\mod\\...)."],["Changes aren't taking effect","Fully restart AoE4 after enabling. Disable other mods to check conflicts."],["Game crashes on load","An extreme stat value may be the cause. Check the 📝 Changes tab."],["Multiplayer sync error","Both players need identical mod files — re-export and re-share the ZIP."]].map(([q,a],i,arr)=>(
               <div key={q} style={{padding:"9px 0",borderBottom:i<arr.length-1?`1px solid rgba(58,46,26,0.35)`:"none"}}>
-                <div style={{fontSize:12,color:C.gold,marginBottom:3}}>❓ {q}</div>
-                <div style={{fontSize:12,color:C.text3,fontStyle:"italic"}}>{a}</div>
+                <div style={{fontSize:14,color:C.gold,marginBottom:3}}>❓ {q}</div>
+                <div style={{fontSize:14,color:C.text3,fontStyle:"italic"}}>{a}</div>
               </div>
             ))}
           </P>
@@ -802,7 +802,7 @@ export default function App(){
             <div>
               <P id="ex-s" icon="📋" title="Mod Summary">
                 {[["Name",meta.name||"Unnamed"],["Version",meta.version],["Author",meta.author||"Anonymous"],["Total Changes",totalChanges],["Units Modified",`${Object.keys(unitMods).length} / ${UNITS.length}`],["Buildings Modified",`${Object.keys(bldgMods).length} / ${BUILDINGS.length}`],["Civs Modified",`${Object.keys(civMods).length} / ${CIVS.length}`],["Techs Modified",`${Object.keys(techMods).length} / ${TECHS.length}`],["Landmarks Modified",`${Object.keys(lmMods).length} / ${LANDMARKS.length}`],["Flags Active",Object.values(flags).filter(Boolean).length],["Multiplayer Required",meta.mp?"Yes":"No"]].map(([k,v])=>(
-                  <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:`1px solid rgba(58,46,26,0.3)`,fontSize:12}}>
+                  <div key={k} style={{display:"flex",justifyContent:"space-between",padding:"5px 0",borderBottom:`1px solid rgba(58,46,26,0.3)`,fontSize:14}}>
                     <span style={{color:C.text3}}>{k}</span><span style={{color:C.gold2,fontWeight:"bold"}}>{v}</span>
                   </div>
                 ))}
@@ -816,7 +816,7 @@ export default function App(){
                 </div>
               </P>
               <P id="ex-j" icon="📄" title="JSON Preview" defaultOpen={false}>
-                <textarea style={{...mk.ta,fontFamily:"'Courier New',monospace",fontSize:10,minHeight:200,background:"rgba(0,0,0,0.7)",color:C.text3}} readOnly value={JSON.stringify(buildJSON(),null,2)}/>
+                <textarea style={{...mk.ta,fontFamily:"'Courier New',monospace",fontSize:13,minHeight:200,background:"rgba(0,0,0,0.7)",color:C.text3}} readOnly value={JSON.stringify(buildJSON(),null,2)}/>
               </P>
             </div>
             <div style={{...mk.panel,padding:22,textAlign:"center"}}>
@@ -829,19 +829,19 @@ export default function App(){
               <Btn variant="export" onClick={exportMod} style={{width:"100%",justifyContent:"center",fontSize:13,padding:13,opacity:exporting?0.6:1}}>
                 {exporting?"⏳ Building ZIP...":"⬇ Download Mod ZIP"}
               </Btn>
-              <div style={{fontSize:10,color:C.text3,marginTop:9,fontStyle:"italic"}}>Home → Mods → My Mods → Enable</div>
+              <div style={{fontSize:13,color:C.text3,marginTop:9,fontStyle:"italic"}}>Home → Mods → My Mods → Enable</div>
               <div style={{marginTop:14,padding:9,background:"rgba(64,160,96,0.07)",border:"1px solid rgba(64,160,96,0.2)",borderRadius:4,fontSize:11,color:"#6ab080",textAlign:"left",lineHeight:1.7}}>
                 ✅ Legitimate data mod<br/>✅ No game files replaced<br/>✅ Skirmish + Multiplayer ready<br/>✅ AoE IV Season 7+ compatible
               </div>
               <hr style={{...mk.div,marginTop:14}}/>
-              <Btn variant="secondary" onClick={()=>setTab("install")} style={{width:"100%",justifyContent:"center",fontSize:10}}>📖 View Full Install Guide</Btn>
+              <Btn variant="secondary" onClick={()=>setTab("install")} style={{width:"100%",justifyContent:"center",fontSize:13}}>📖 View Full Install Guide</Btn>
             </div>
           </div>
         </div>}
       </div>
 
       {toast&&(
-        <div style={{position:"fixed",bottom:18,right:18,background:C.bg4,border:`1px solid ${toast.type==="success"?C.green:toast.type==="error"?C.red:C.gold}`,borderRadius:5,padding:"9px 16px",fontFamily:"Georgia,serif",fontSize:12,color:toast.type==="success"?C.green:toast.type==="error"?C.red:C.gold2,boxShadow:"0 8px 32px rgba(0,0,0,0.8)",zIndex:9999,letterSpacing:1,maxWidth:300}}>
+        <div style={{position:"fixed",bottom:18,right:18,background:C.bg4,border:`1px solid ${toast.type==="success"?C.green:toast.type==="error"?C.red:C.gold}`,borderRadius:5,padding:"9px 16px",fontFamily:"Georgia,serif",fontSize:14,color:toast.type==="success"?C.green:toast.type==="error"?C.red:C.gold2,boxShadow:"0 8px 32px rgba(0,0,0,0.8)",zIndex:9999,letterSpacing:1,maxWidth:300}}>
           {toast.msg}
         </div>
       )}
